@@ -66,4 +66,4 @@ def ltp():
 
 col = st.columns(3)
 stock_key = col[0].text_input("Stock Key", value="NSE_INDEX|Nifty 50")
-btn_ltp = col[1].button("LTP Fetch", on_click=ltp)
+btn_ltp = col[1].button("LTP", on_click=ltp)
