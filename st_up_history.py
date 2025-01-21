@@ -5,9 +5,9 @@ import requests
 st.set_page_config(page_title='QP App01', layout='wide', initial_sidebar_state="collapsed",)
 
 col = st.columns(3)
-client_id = col[0].text_input("client id", value="cf2ad58c-fbb3-4688-b134-9d22e6b54e19")
-client_secret = col[1].text_input("client Secret", value="bc6bibivck")
-redirect_uri = col[2].text_input("redirect url", value="https://quickplace.in/")
+client_id = col[0].text_input("client id", value="")
+client_secret = col[1].text_input("client Secret", value="")
+redirect_uri = col[2].text_input("redirect url", value="")
 
 link1 = f'https://api.upstox.com/v2/login/authorization/dialog?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}'
 btn_tkn_link = st.link_button("Token Link", link1,help=None, type="secondary", icon=None, disabled=False, use_container_width=False)
