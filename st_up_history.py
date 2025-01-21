@@ -20,7 +20,7 @@ if 'acc_tkn' not in st.session_state:
 
 st.write(st.session_state['acc_tkn'])
 
-
+@st.cache_data
 def login():
     url = "https://api.upstox.com/v2/login/authorization/token"
     headers = {'Content-Type': 'application/x-www-form-urlencoded','Accept': 'application/json'}
